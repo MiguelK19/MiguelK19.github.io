@@ -1,0 +1,83 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(106, 222, 243);
+    font-family: sans-serif;
+}
+.Title h1{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+    text-transform: uppercase;
+}
+.Contenedor{
+    background-color: #f6aedc;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+.Contenedor > .header,
+.Contenedor > .Contenido-principal,
+.Contenedor > .SideBar,
+.Contenedor > .footer,
+.Contenedor > div{
+    padding: 20px;
+    border: 2px solid #000;
+}
+.Contenedor .header,
+.Contenedor .footer{
+    grid-column: 1/6;
+    background-color: #000;
+    color: whitesmoke;
+}
+.Contenedor .Contenido-principal{
+    grid-column: span 3;
+}
+.Contenedor .SideBar{
+    grid-column: span 2;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+.Contenido-principal .Articulo{
+    padding: 20px;
+    color: whitesmoke;
+    background-color: #f5c;
+    margin-top: 5px;
+}
+.Contenido-principal h1,
+.Contenido-principal p{
+    padding: 10px;
+}
+.Contenedor .related-post{
+    height: 180px;
+    background-color: rgb(48, 109, 223);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.Contenedor .SideBar img{
+    width: 100%;
+    margin-top: 20px;
+}
+.Contenedor .related-post:hover{
+    cursor: pointer;
+    background-color: #f6aedc;
+    color: #000;
+}
